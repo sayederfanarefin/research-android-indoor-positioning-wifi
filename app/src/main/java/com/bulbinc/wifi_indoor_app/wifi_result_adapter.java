@@ -50,7 +50,7 @@ public class wifi_result_adapter extends ArrayAdapter<ScanResult> {
 
         row.setTag(currentItem);
         final TextView the_unit_news_titlw = (TextView) row.findViewById(R.id.textView_news_list_title);
-        the_unit_news_titlw.setText(currentItem.SSID);
+        the_unit_news_titlw.setText(currentItem.SSID+ " "+currentItem.BSSID);
         return row;
     }
 

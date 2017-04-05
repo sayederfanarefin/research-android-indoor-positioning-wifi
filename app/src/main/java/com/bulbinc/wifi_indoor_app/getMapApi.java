@@ -40,14 +40,13 @@ public class getMapApi {
                 @Override
                 protected Boolean doInBackground(Void... params) {
                     try {
-
                         Log.v("==url ", final_url);
                         URL url = new URL(final_url);
                         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                         conn.setReadTimeout(10000);
                         conn.setConnectTimeout(15000);
                         conn.setRequestProperty("USER-AGENT", "Mozilla/5.0");
-                        conn.setRequestMethod("GET");
+                        conn.setRequestMethod("POST");
                         conn.setDoInput(true);
                         conn.setDoOutput(true);
 
